@@ -3,26 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Incremental Game</title>
+    <title>Advanced Incremental Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="game-container">
-        <h1>Coin Clicker</h1>
+        <h1>Coin Clicker Pro</h1>
         
         <div class="score-board">
             <p>Coins: <span id="coin-count">0</span></p>
-            <p>Coins per second: <span id="cps-count">0</span></p>
+            <p>Coins per second (CPS): <span id="cps-count">0</span></p>
+            <p>Coin per click: <span id="click-power-count">1</span></p>
         </div>
 
         <button id="click-btn" class="main-button">Click Me!</button>
 
-        <div class="upgrades">
+        <div class="upgrades-section">
             <h2>Upgrades</h2>
-            <button id="buy-autoclicker-btn">
-                Buy Auto-Clicker (Cost: <span id="autoclicker-cost">10</span>)
-            </button>
-            <p>Owned: <span id="autoclicker-count">0</span></p>
+            
+            <div class="upgrade-item">
+                <button id="buy-click-power-btn">Sharper Clicks (Cost: <span id="click-power-cost">25</span>)</button>
+                <p>Level: <span id="click-power-level">1</span> (+1 per click)</p>
+            </div>
+
+            <div class="upgrade-item">
+                <button id="buy-autoclicker-btn">Auto-Clicker (Cost: <span id="autoclicker-cost">10</span>)</button>
+                <p>Owned: <span id="autoclicker-count">0</span> (+1 CPS each)</p>
+            </div>
+
+            <div class="upgrade-item">
+                <button id="buy-miner-btn">Gold Miner (Cost: <span id="miner-cost">100</span>)</button>
+                <p>Owned: <span id="miner-count">0</span> (+8 CPS each)</p>
+            </div>
         </div>
     </div>
 
